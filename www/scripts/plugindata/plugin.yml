@@ -1,0 +1,35 @@
+# Plugin name
+name: shopify
+
+# URL of the backend code deployment
+api_host:       https://polar-dawn-82829.herokuapp.com/api
+
+# Name of the root navigation menu. In Shopify this is usually main-menu
+# but you can create navigation hierarchy based on any other menu. The items
+# of the root menu will be displayed on the home page.
+root_category:  main-menu
+
+# Sorting options
+sorting_options:
+
+  - id:     default
+    label:  products.sortFeatured
+    value:  
+
+  - id:     title_asc
+    label:  products.sortAZ
+    value:  title+asc
+
+  - id:     title_desc
+    label:  products.sortZA
+    value:  title+desc
+
+  - id:     date_asc
+    label:  products.sortNewest
+    value:  createdAt+asc
+
+# Capabilities
+
+capabilities:
+  
+  inAppCheckout: true 
