@@ -1,56 +1,104 @@
-<!--
-	NOTES:
-	1. All tokens are represented by '$' sign in the template.
-	2. You can write your code only wherever mentioned.
-	3. "DO NOT" alter the tokens in the template html as they are required during publishing.
--->
-
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Untitled-1</title>
-<!-- write your code here -->
+<html ng-app="myApp">
 
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+         
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
 
-<script src="createjs-2015.11.26.min.js"></script>
-<script src="Untitled-1.js"></script>
-<script>
-var canvas, stage, exportRoot;
-function init() {
-	// --- write your JS code here ---
-	
-	canvas = document.getElementById("canvas");
-	images = images||{};
+        <title>FLY</title>
 
-	var loader = new createjs.LoadQueue(false);
-	loader.addEventListener("fileload", handleFileLoad);
-	loader.addEventListener("complete", handleComplete);
-	loader.loadManifest(lib.properties.manifest);
-}
+        <script type="text/javascript" charset="utf-8">
+            var deviceType = (navigator.userAgent.match(/iPad/i)) == "iPad" ? "iPad" : (navigator.userAgent.match(/iPhone/i)) == "iPhone" ? "iPhone" : (navigator.userAgent.match(/Android/i)) == "Android" ? "Android" : (navigator.userAgent.match(/BlackBerry/i)) == "BlackBerry" ? "BlackBerry" : "null";
+            if (deviceType == "Android") {
+                $('meta[name=viewport]').attr('content', 'width=768, initial-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=285');
+            }
+            document.addEventListener("deviceready", onDeviceReady, false);     
+        </script>
+    </head>
 
-function handleFileLoad(evt) {
-	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
-}
+    <body>
+    
+        <!-- Header -->
+        <nav>
+            <a ng-click="go('/page1', 'slideLeft')">Page 1</a>
+            <a ng-click="go('/page2', 'slideRight')">Page 2</a>
+            <a ng-click="go('/page3', 'slideDown')">Page 3</a>
+            <a ng-click="go('/page4')">Page 4</a> <!-- note: no transition specified -->
+        </nav>
+    
+        <!-- App Content Container -->
+        <div class="page-container">
+            <div ng-view="" class="page-view" ng-class="pageAnimationClass"></div>
+        </div>
+    
+        <!-- Example page partials -->
+        <script type="text/ng-template" id="page1.html">
+            <div id="page1" class="pages">
+                <h1>Page 1</h1>
+                <p>Here's a simple, scalable approach for page transitions in a single page app using the new(ish) class-based animation support for ng-view: a rootScope 'go' method.</p>
+                <pre>
+    $rootScope.go = function (path, pageAnimationClass) {
 
-function handleComplete(evt) {
-	exportRoot = new lib.Untitled1();
+        if (typeof(pageAnimationClass) === 'undefined') { // Use a default, your choice
+            $rootScope.pageAnimationClass = 'crossFade';
+        }
+        
+        else { // Use the specified animation
+            $rootScope.pageAnimationClass = pageAnimationClass;
+        }
 
-	stage = new createjs.Stage(canvas);
-	stage.addChild(exportRoot);
-	stage.update();
-	stage.enableMouseOver();
+        if (path === 'back') { // Allow a 'back' keyword to go to previous page
+            $window.history.back();
+        }
+        
+        else { // Go to the specified path
+            $location.path(path);
+        }
+    };
+                </pre>
+                <p>We add the 'pageAnimationClass' class to the view container with ng-class and set up any number of arbitrary page transitions in our css file.</p>
+            </div>
+        </script>
+    
+        <script type="text/ng-template" id="page2.html">
+            <div id="page2" class="pages">
+                <h1>Page 2</h1>
+                <p>Use the method from any page in an ng-click or other event handler.</p>
+                <p><a ng-click="go('/page3', 'slideUp')">Slide up Page 3</a></p>
+                <code>&lt;a ng-click="go('/page3', 'slideUp')"&gt;Slide up Page 3&lt;/a&gt;</code>
+            </div>
+        </script>
+    
+        <script type="text/ng-template" id="page3.html">
+            <div id="page3" class="pages">
+                <h1>Page 3</h1>
+                <p>We can also include a 'back' keyword for convenience</p>
+                <p><a ng-click="go('back', 'slideLeft')">Slide left back to the previous page</a></p>
+                <code>&lt;a ng-click="go('back', 'slideLeft')"&gt;Slide left...&lt;/a&gt;</code>
+            </div>
+        </script>
+        
+        <script type="text/ng-template" id="page4.html">
+            <div id="page4" class="pages">
+                <h1>Page 4</h1>
+                <p>The transition class is optional since we set a default in our go method.</p>
+                <p><a ng-click="go('/page1')">Use the default transition (crossFade) to go to page 1</a></p>
+                <code>&lt;a ng-click="go('/page1')"&gt;Use the default...&lt;/a&gt;</code>
+            </div>
+        </script>
+    
+        <!-- Scripts -->
+        <script src="js/jquery-2.0.3.min.js"></script>
+        <script src="js/angular.js"></script>
+        <script src="js/angular-route.js"></script>
+        <script src="js/angular-animate.js"></script>
+        <script src="js/app.js"></script>
+    </body>
 
-	createjs.Ticker.setFPS(lib.properties.fps);
-	createjs.Ticker.addEventListener("tick", stage);
-}
-
-</script>
-
-<!-- write your code here -->
-
-</head>
-<body onload="init();" style="background-color:#D4D4D4;margin:0px;">
-	<canvas id="canvas" width="550" height="400" style="background-color:#FFFFFF"></canvas>
-</body>
 </html>
+
