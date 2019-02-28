@@ -46,10 +46,10 @@
     <preference name="android:hardwareAccelerated" value="true" />
 
     <!--WKWEBVIEW-->
-    <!-- <feature name="CDVWKWebViewEngine">
+    <feature name="CDVWKWebViewEngine">
         <param name="ios-package" value="CDVWKWebViewEngine" />
     </feature>
-    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" /> -->
+    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
 
     <preference name="AllowBackForwardNavigationGestures" value="true" />	
     <preference name="AllowLinkPreview" value="false" />	
