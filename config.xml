@@ -46,10 +46,10 @@
     <preference name="android:hardwareAccelerated" value="true" />
 
     <!--WKWEBVIEW-->
-    <feature name="CDVWKWebViewEngine">
+    <!-- <feature name="CDVWKWebViewEngine">
         <param name="ios-package" value="CDVWKWebViewEngine" />
     </feature>
-    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" /> -->
 
     <preference name="AllowBackForwardNavigationGestures" value="true" />	
     <preference name="AllowLinkPreview" value="false" />	
@@ -69,7 +69,7 @@
     <!-- <plugin name="phonegap-plugin-push" source="npm" spec="~1.8.0">
         <variable name="SENDER_ID" value="XXXXXXX" />
     </plugin> -->
-    <plugin name="cordova-plugin-console" source="npm" spec="~1.0.3" />
+    <!-- <plugin name="cordova-plugin-console" source="npm" spec="~1.0.3" />
 
     <gap:plugin name="cordova-plugin-network-information" source="npm"/>
     <gap:plugin name="cordova-plugin-device" source="npm"/>
@@ -82,7 +82,7 @@
     <gap:plugin name="cordova-plugin-geolocation" source="npm"/>
     <gap:plugin name="cordova-plugin-app-preferences" source="npm" />
     <gap:plugin name="cordova.plugins.diagnostic" source="npm" spec="3.1.0" />
-    <plugin name="cordova-plugin-splashscreen"        source="npm" />
+    <plugin name="cordova-plugin-splashscreen"        source="npm" /> -->
 
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
