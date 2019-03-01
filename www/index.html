@@ -11,13 +11,21 @@
         <link rel="stylesheet" href="css/style.css" />
 
         <title>FLY</title>
+        
+        <!-- Scripts -->
+        <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="js/angular.js"></script>
+        <script type="text/javascript" src="js/angular-route.js"></script>
+        <script type="text/javascript" src="js/angular-animate.js"></script>
+        <script type="text/javascript" src="js/fastclick.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
 
         <script type="text/javascript" charset="utf-8">
             var deviceType = (navigator.userAgent.match(/iPad/i)) == "iPad" ? "iPad" : (navigator.userAgent.match(/iPhone/i)) == "iPhone" ? "iPhone" : (navigator.userAgent.match(/Android/i)) == "Android" ? "Android" : (navigator.userAgent.match(/BlackBerry/i)) == "BlackBerry" ? "BlackBerry" : "null";
             if (deviceType == "Android") {
                 $('meta[name=viewport]').attr('content', 'width=768, initial-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=285');
             }
-            document.addEventListener("deviceready", onDeviceReady, false);     
+            // document.addEventListener("deviceready", onDeviceReady, false);     
         </script>
     </head>
 
@@ -92,12 +100,6 @@
             </div>
         </script>
     
-        <!-- Scripts -->
-        <script src="js/jquery-2.0.3.min.js"></script>
-        <script src="js/angular.js"></script>
-        <script src="js/angular-route.js"></script>
-        <script src="js/angular-animate.js"></script>
-        <script src="js/app.js"></script>
     </body>
 
 </html>
