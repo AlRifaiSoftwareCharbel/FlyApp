@@ -1,0 +1,27 @@
+@media only screen and (max-width: 600px)
+ { 
+    #page1{
+        padding-left: 40px;
+        padding-top: 30px;
+     }
+     #page1 .roundBtn{
+        margin-top: 25px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+     }
+     
+     #page1 .logoSquare{
+        width: 35px;
+     }
+     #page1 .discover{
+        height: 35px;
+        margin-top: 35px;
+     }
+     #page1 .goodness{
+        height: 40px;
+        margin-top: 25px;
+     }
+        
+
+ }
