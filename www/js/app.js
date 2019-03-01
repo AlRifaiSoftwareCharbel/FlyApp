@@ -56,3 +56,13 @@ myApp.config(['$routeProvider', function ($routeProvider) {
            templateUrl: 'page1.html' 
         });
 }]);
+
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    setTimeout(function () {
+   // pdfConvertor();
+   StatusBar.hide();
+   
+    }, 200);
+
+}
