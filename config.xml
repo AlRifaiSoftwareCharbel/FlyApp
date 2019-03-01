@@ -29,7 +29,7 @@
     <preference name="android-targetSdkVersion" value="23"/>
     <preference name="android-build-tool" value="gradle" />
     <preference name="detect-data-types" value="true" />
-    <preference name="orientation" value="portrait" />
+    <!-- <preference name="orientation" value="portrait" /> -->
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
     <preference name="MediaPlaybackRequiresUserAction" value="no" />
@@ -46,10 +46,10 @@
     <preference name="android:hardwareAccelerated" value="true" />
 
     <!--WKWEBVIEW-->
-    <!-- <feature name="CDVWKWebViewEngine">
+    <feature name="CDVWKWebViewEngine">
         <param name="ios-package" value="CDVWKWebViewEngine" />
     </feature>
-    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" /> -->
+    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
 
     <preference name="AllowBackForwardNavigationGestures" value="true" />	
     <preference name="AllowLinkPreview" value="false" />	
@@ -65,6 +65,9 @@
     <preference name="ShowSplashScreenSpinner"    value="true" />
     <preference name="SplashScreenSpinnerColor"   value="#FD8201"/>
     <!-- end splash screen -->
+    
+    <gap:plugin name="cordova-plugin-statusbar" source="npm" />
+    <plugin name="cordova-plugin-splashscreen"        source="npm" /> 
 
     <!-- <plugin name="phonegap-plugin-push" source="npm" spec="~1.8.0">
         <variable name="SENDER_ID" value="XXXXXXX" />
@@ -73,7 +76,6 @@
 
     <gap:plugin name="cordova-plugin-network-information" source="npm"/>
     <gap:plugin name="cordova-plugin-device" source="npm"/>
-    <gap:plugin name="cordova-plugin-statusbar" source="npm" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" />
     <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
     <gap:plugin name="cordova-plugin-app-version" source="npm"  />
@@ -81,8 +83,7 @@
     <gap:plugin name="cordova-plugin-webviewcolor" source="npm" />
     <gap:plugin name="cordova-plugin-geolocation" source="npm"/>
     <gap:plugin name="cordova-plugin-app-preferences" source="npm" />
-    <gap:plugin name="cordova.plugins.diagnostic" source="npm" spec="3.1.0" />
-    <plugin name="cordova-plugin-splashscreen"        source="npm" /> -->
+    <gap:plugin name="cordova.plugins.diagnostic" source="npm" spec="3.1.0" />-->
 
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
