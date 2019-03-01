@@ -60,9 +60,12 @@ myApp.config(['$routeProvider', function ($routeProvider) {
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
     setTimeout(function () {
-   // pdfConvertor();
-   StatusBar.hide();
-   
-    }, 200);
+        alert("start");
+        
+        // pdfConvertor();
+        StatusBar.hide();
+
+        alert("end");
+    }, 1000);
 
 }
