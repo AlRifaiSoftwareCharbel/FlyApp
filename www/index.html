@@ -26,14 +26,20 @@
     <script type="text/javascript" src="device.js"></script>
     <script type="text/javascript" src="statusbar.js"></script>
     <script type="text/javascript" src="splashscreen.js"></script>
-    
+
 
         <script type="text/javascript" charset="utf-8">
             var deviceType = (navigator.userAgent.match(/iPad/i)) == "iPad" ? "iPad" : (navigator.userAgent.match(/iPhone/i)) == "iPhone" ? "iPhone" : (navigator.userAgent.match(/Android/i)) == "Android" ? "Android" : (navigator.userAgent.match(/BlackBerry/i)) == "BlackBerry" ? "BlackBerry" : "null";
             if (deviceType == "Android") {
                 $('meta[name=viewport]').attr('content', 'width=768, initial-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=285');
             }
-             document.addEventListener("deviceready", onDeviceReady, false);     
+            document.addEventListener("deviceready", onDeviceReady, false);  
+            function onDeviceReady() {
+                setTimeout(function () {
+                    StatusBar.hide();
+                    //alert("end");
+                }, 100);
+            }            
         </script>
     </head>
 
