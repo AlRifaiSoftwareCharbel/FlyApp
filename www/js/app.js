@@ -39,6 +39,12 @@ myApp.run(['$rootScope', '$location', '$window', function ($rootScope, $location
      * @param  {String} pageAnimationClass A classname defining the desired page transition
      */
     $rootScope.go = function (path, pageAnimationClass) {
+//  var pt=path.split("/");
+//  var pg=0;
+//  if(pt.length==0){
+
+//  }
+//console.log($location);
 
         if (typeof(pageAnimationClass) === 'undefined') { // Use a default, your choice
             $rootScope.pageAnimationClass = 'crossFade';
@@ -64,20 +70,23 @@ myApp.config(['$routeProvider', function ($routeProvider) {
     'use strict';
 
     $routeProvider
-        .when('/page1', {
-            templateUrl: 'page1.html'
+        .when('/0', {
+            templateUrl: 'pages/intro.html'
         })
-        .when('/page2', {
+        .when('/1', {
+            templateUrl: 'pages/main.html'
+        })
+        .when('/2', {
             templateUrl: 'page2.html'
         })
-        .when('/page3', {
+        .when('/3', {
             templateUrl: 'page3.html'
         })
-        .when('/page4', {
+        .when('/4', {
             templateUrl: 'page4.html'
         })
         .otherwise({
-           templateUrl: 'page1.html' 
+           templateUrl: 'pages/intro.html' 
         });
 }]);
 
