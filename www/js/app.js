@@ -39,13 +39,6 @@ myApp.run(['$rootScope', '$location', '$window', function ($rootScope, $location
      * @param  {String} pageAnimationClass A classname defining the desired page transition
      */
     $rootScope.go = function (path, pageAnimationClass) {
-//  var pt=path.split("/");
-//  var pg=0;
-//  if(pt.length==0){
-
-//  }
-//console.log($location);
-
         if (typeof(pageAnimationClass) === 'undefined') { // Use a default, your choice
             $rootScope.pageAnimationClass = 'crossFade';
         }

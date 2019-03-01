@@ -5,9 +5,10 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <meta name="viewport" content="width=1024, initial-scale=1, maximum-scale=1, user-scalable=no" />
          
         <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/fonts/stylesheet.css" />
         <link rel="stylesheet" href="css/style.css" />
 
         <title>FLY</title>
@@ -31,7 +32,7 @@
         <script type="text/javascript" charset="utf-8">
             var deviceType = (navigator.userAgent.match(/iPad/i)) == "iPad" ? "iPad" : (navigator.userAgent.match(/iPhone/i)) == "iPhone" ? "iPhone" : (navigator.userAgent.match(/Android/i)) == "Android" ? "Android" : (navigator.userAgent.match(/BlackBerry/i)) == "BlackBerry" ? "BlackBerry" : "null";
             if (deviceType == "Android") {
-                $('meta[name=viewport]').attr('content', 'width=768, initial-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=285');
+                $('meta[name=viewport]').attr('content', 'width=1024, initial-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=285');
             }
             document.addEventListener("deviceready", onDeviceReady, false);  
             function onDeviceReady() {
