@@ -139,6 +139,186 @@ video {
    height: 49px;
    margin-top: 85px;
 }
+#page2{
+   background: #454647;
+}
+#page2 .mainCat{
+   position: relative;
+   width: 100%;
+   height: 33.3%;
+   color: #fff;
+   font-family: 'sf_ui_textbold';
+  
+}
+#page2 .mainCat .hTitle{
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: 100px;
+   line-height: 100px;
+   margin-left: 95px;
+   padding-left: 60px;
+   border-left:7px solid #013711;
+}
+#page2 .mainCat .hColor{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   height: 100px;
+   right: 0px;   
+   width: calc(100% - 772px);
+   background:  #013711;
+}
+
+#page2 .mainCat.cat1{
+   background: #1d1e1f;
+}
+#page2 .mainCat.cat2{
+   background: #2e2f30;
+}
+
+
+#page3 {
+   background-color: #1D1E1F;
+}
+#page3 .topCat{
+   padding-left: 36px;
+   height: 72px;
+   background: #454647;
+   position: absolute;
+   width: 100%;
+   left: 0px;
+   top: 0px;
+   color: #fff;
+   border-top: 8px solid;
+   font-family: 'sf_ui_textbold';
+}
+#page3 .topCat .hBack{
+   display: inline-block;
+   vertical-align: middle;
+}
+#page3 .topCat .hBack .backAR{
+   height: 30px;
+}
+#page3 .topCat .hTitle{
+   display: inline-block;
+   vertical-align: middle;
+   line-height: 63px;
+   font-size: 40px;
+   margin-left: 18px;
+}
+#page3 .contentCat{
+   position: absolute;
+   left: 0px;
+   bottom: 0px;
+   height: calc(100% - 72px);
+   width: 100%;
+   overflow: scroll;
+}
+#page3 .itemList{
+   margin-left: 59px;
+   border-left: 7px solid;
+   margin-top: 45px;
+   margin-bottom: 45px;
+   display: inline-block;
+   overflow: hidden;
+
+   -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+#page3 .itemList .tit{
+   font-family: 'sf_ui_textbold';
+   font-size: 25px;
+   margin-bottom: 35px;
+   color: #fff;   
+   padding-left: 20px;
+}
+#page3 .itemList .swipeBox{
+   position: relative;
+   left: 0px;
+   transition: all 0.3s ease-in-out;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+
+}
+#page3 .itemList .swipeBox .desc{
+   font-family: 'sf_ui_textregular';
+   font-size: 20px;
+   margin-bottom: 75px;
+   color: #fff;
+   padding-left: 20px;
+   width: calc(100% - 350px);
+}
+#page3 .itemList .swipeBox .subDesc{
+   font-family: 'sf_ui_textregular';
+   font-size: 20px;
+   padding-bottom: 20px;
+   padding-left: 20px;
+   width: calc(100% - 350px);
+}
+#page3 .itemList .swipeBox .content{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   z-index: 100;
+   background-color: #2e2f30;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 24px;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   padding-top: 25px;
+   padding-bottom: 25px;
+   left: 100%;
+   width: 300px;
+}
+#page3 .itemList.active .swipeBox{
+   -webkit-transform: translate3d(-300px,0,0);
+   -moz-transform: translate3d(-300px,0,0);
+    -ms-transform: translate3d(-300px,0,0);
+     -o-transform: translate3d(-300px,0,0);
+        transform: translate3d(-300px,0,0);
+}
+#page3 .itemList .swipeBox .content::after{
+   content:'';
+   position: absolute;
+   width: 40px;
+   height: 40px;
+   background-image: url(../images/contentDetail.svg);
+   left: -40px;
+   top: calc(50% - 20px);
+   background-size: cover;
+}
+#page3 .itemList .swipeBox .content ul{
+   list-style: none;
+   padding: 0px;
+   margin-top: 15px;
+}
+#page3 .itemList .swipeBox .content ul li{
+   padding-left: 0px; text-indent:0px;
+   color:#fff;
+}
+#page3 .itemList .swipeBox .pic{
+   position: absolute;
+   left: calc(100% - 350px);
+   right: 20px;
+   top: 0px;
+   bottom: 175px;
+   min-height: 130px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: bottom right;
+}
+#page3 .itemList .swipeBox .pic.over{
+   left: calc(100% - 550px);
+}
 
 /* Transitions */
 

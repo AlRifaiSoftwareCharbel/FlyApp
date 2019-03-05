@@ -21,5 +21,47 @@
       margin-top: 55px;
    }
    
+   #page2 .mainCat .hTitle{
+      font-size: 60px;
+      line-height: 70px;
+      margin-left: 65px;
+      padding-left: 40px;
+   }
+   #page2 .mainCat .hColor{
+      height: 70px;
+      width: calc(100% - 472px);
+   }
+
+   #page3 .topCat .hTitle {
+      font-size: 30px;
+  }
+
+
+  #page3 .itemList {
+   margin-top: 25px;
+   margin-bottom: 25px;
+  }
+  #page3 .itemList .tit{  
+     padding-left: 15px;
+  }
+  #page3 .itemList .swipeBox .desc {
+      margin-bottom: 55px;
+      font-size: 15px;
+      padding-left: 15px;
+      width: calc(100% - 250px);  
+   }
+   #page3 .itemList .swipeBox .subDesc{
+      font-size: 15px;
+      padding-bottom: 20px;
+      padding-left: 15px;
+      width: calc(100% - 250px);
+   }
+   #page3 .itemList .swipeBox .pic{
+      left: calc(100% - 250px);
+      bottom: 141px;
+   }
+   #page3 .itemList .swipeBox .pic.over{
+      left: calc(100% - 450px);
+   }
 
  }

@@ -1,0 +1,35 @@
+<div id="page3" class="pages">
+   <div class="topCat" ng-style="{'border-top-color':mainCat[catId].color}" >
+        <div class="hBack"  ng-tap="go('/2' , 'slideRight')">
+                <img src="./images/backAR.svg" class="backAR" />
+        </div>
+       <div class="hTitle">{{mainCat[catId].title}}</div>
+   </div>
+   <div class="contentCat" scroll>
+        
+    <div class="itemList" 
+            ng-style="{'border-color':item.color,'color':item.color}"
+            ng-repeat="item in itemList" 
+            ng-class="activeItem==$index?'active':''">
+
+            <div class="tit">{{item.title}}</div>
+            <div class="swipeBox" 
+                    ng-swipe-left="swipeLeft($index)"
+                    ng-swipe-right="swipeRight($index)" >
+                <div class="desc" ng-bind-html="item.desc"></div>
+                <div class="pic" ng-tap="setActiveTab($index)"  
+                    ng-style="{'background-image': 'url(./products/'+item.pic}">
+                </div>
+                <div class="subDesc" ng-bind-html="item.subDesc"></div>
+                <div class="content">
+                    <span>CONTENT</span>
+                    <ul>
+                        <li ng-repeat="it in item.content">{{it.desc}}</li>
+                    </ul>
+                </div>
+            </div>    
+        </div>    
+
+        
+   </div>
+</div>

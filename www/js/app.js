@@ -1,11 +1,17 @@
+'use strict';
 // Declare the main module
 var myApp = angular.module('myApp', [
     'ngRoute',
-    'ngAnimate'
+    'ngSanitize',
+    'ngAnimate',
+    'swipe'
 ]);
 
-myApp.directive("ngTap", function() {
+myApp.directive("ngTap", function($rootScope) {
     return function($scope, $element, $attributes) {
+            
+      $rootScope.redirectMe();
+      
       var tapped;
       tapped = false;
       $element.bind("click", function() {
@@ -28,6 +34,19 @@ myApp.directive("ngTap", function() {
     };
   });
 
+myApp.directive('scroll', function($rootScope) {
+    return {
+      link: function (scope, elem, attrs) {
+        elem.on('scroll', function (e) {
+          // do your thing
+          //console.log($rootScope.mainCat);          
+          $rootScope.redirectMe();
+        });
+      }
+    }
+  });
+
+var timeOutCandidate;
 // Initialize the main module
 myApp.run(['$rootScope', '$location', '$window', function ($rootScope, $location, $window) {
 
@@ -54,7 +73,39 @@ myApp.run(['$rootScope', '$location', '$window', function ($rootScope, $location
         else { // Go to the specified path
             $location.path(path);
         }
+        //$rootScope.redirectMe();
     };
+    $rootScope.mainCat=[
+      {
+        title:"Medleys",
+        color:"#013711"
+      },
+      {
+        title:"Noble Nuts",
+        color:"#03203b"
+      },
+      {
+        title:"Delicacies",
+        color:"#400721"
+      }
+    ]
+
+    $rootScope.timeOutMe=35000;
+    $rootScope.redirectMe = function ()
+    {
+    /////////////////////security
+        if(timeOutCandidate)
+        clearTimeout(timeOutCandidate);
+        timeOutCandidate = setTimeout(function () {
+            //$rootScope.redirectMe();
+
+            //redirect me
+           // window.location = "#/0";
+
+        }, $rootScope.timeOutMe);
+    //end 
+    }
+    $rootScope.redirectMe();
 }]);
 
 // Configure the main module
@@ -70,16 +121,46 @@ myApp.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'pages/main.html'
         })
         .when('/2', {
-            templateUrl: 'page2.html'
+            templateUrl: 'pages/category.html'
         })
-        .when('/3', {
-            templateUrl: 'page3.html'
+        .when('/3/:productId?', {
+            templateUrl: 'pages/product.html',            
+            controller: 'productCtrl'
         })
-        .when('/4', {
-            templateUrl: 'page4.html'
-        })
+        
         .otherwise({
            templateUrl: 'pages/intro.html' 
         });
 }]);
 
+///////////////////////////////////////////////////////////////////
+///////////////////// productCtrl ///////////////////////////////////
+///////////////////////////////////////////////////////////////////
+myApp.controller('productCtrl', function ($rootScope, $scope, $http, $routeParams, $timeout) {
+  $scope.catId = $routeParams.productId;
+  $scope.itemList=[];
+  $scope.activeItem=1000;
+  $scope.setActiveTab=function(index){
+    $scope.activeItem=index;
+  }
+  $scope.swipeLeft = function(index) {
+    console.log("swipeMe Left:::"+index);
+    $scope.activeItem=index;
+  }
+  $scope.swipeRight = function(index) {
+    console.log("swipeMe right::::"+index);
+    $scope.activeItem=1000;
+  }
+
+  $http.get("products.js").success(function (data) {
+    console.log(data);
+    for(var i=0;i<data.length;i++)
+    {
+      if(data[i].cat == $scope.catId)
+        $scope.itemList.push(data[i]);
+    }
+
+  });
+
+
+});
