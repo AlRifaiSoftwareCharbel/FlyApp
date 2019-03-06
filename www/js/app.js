@@ -103,7 +103,7 @@ myApp.run(['$rootScope', '$location', '$window', function ($rootScope, $location
             //$rootScope.redirectMe();
 
             //redirect me
-            window.location = "#/0";
+            //window.location = "#/0";
 
         }, $rootScope.timeOutMe);
     //end 

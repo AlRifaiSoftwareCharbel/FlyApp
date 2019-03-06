@@ -23,13 +23,27 @@
                 </div>
                 <div class="subDesc" ng-bind-html="item.subDesc"></div>
                 <div class="content" 
+                        ng-style="{'background-color': item.color}" 
                         ng-if="item.content.length>0" 
                         ng-class="item.picBig?'left':''"
                         ng-tap="setActiveTab($index)">
-                    <span>CONTENT</span>
+                    <!-- <span>CONTENT</span> -->
                     <ul>
                         <li ng-repeat="it in item.content"  ng-bind-html="it.desc"></li>
                     </ul>
+                    <!-- <div class="arrow">
+                        <svg  width="80" height="80">
+                            <defs>
+                                <clipPath id="clip_0">
+                                    <rect x="-1288" y="-482" width="2048" height="2732" clip-rule="evenodd"/>
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#clip_0)">
+                                <path fill="{{item.color}}" stroke="none" transform="matrix(-8.74228e-08 -2 2 -8.74228e-08 0 80)" d="M20 0L40 40L0 40L20 0Z"/>
+                            </g>
+                        
+                        </svg>
+                    </div> -->
                 </div>
             </div>    
         </div>    
