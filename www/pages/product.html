@@ -12,11 +12,14 @@
             ng-repeat="item in itemList" 
             ng-class="activeItem==$index?'active':''">
 
-            <div class="tit">{{item.title}}</div>
+            <div class="tit"  ng-tap="setActiveTab($index)">{{item.title}}</div>
             <div class="swipeBox" 
+                   
                     ng-swipe-left="swipeLeft($index)"
                     ng-swipe-right="swipeRight($index)" >
-                <div class="desc" ng-bind-html="item.desc"></div>
+                <div class="desc" 
+                        ng-bind-html="item.desc"
+                        ng-tap="setActiveTab($index)" ></div>
                 <div class="pic" ng-tap="setActiveTab($index)"  
                     ng-class="item.picBig?'over':''"
                     ng-style="{'background-image': 'url(./products/'+item.pic}">

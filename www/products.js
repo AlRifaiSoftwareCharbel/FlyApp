@@ -24,6 +24,9 @@
                     "desc": "Cashew Salted"
                 },
                 {
+                    "desc": "Cashew Krikri"
+                },
+                {
                     "desc": "Almond Salted"
                 }
             ]

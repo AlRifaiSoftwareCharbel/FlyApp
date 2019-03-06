@@ -100,10 +100,9 @@ myApp.run(['$rootScope', '$location', '$window', function ($rootScope, $location
         if(timeOutCandidate)
         clearTimeout(timeOutCandidate);
         timeOutCandidate = setTimeout(function () {
-            //$rootScope.redirectMe();
 
-            //redirect me
-            //window.location = "#/0";
+          //redirect me
+            window.location = "#/0";
 
         }, $rootScope.timeOutMe);
     //end 
