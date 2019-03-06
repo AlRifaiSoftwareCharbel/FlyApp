@@ -32,11 +32,12 @@
     <!-- <preference name="orientation" value="portrait" /> -->
     <preference name="Fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
+    <preference name="UIWebViewBounce" value="true" />
     <preference name="MediaPlaybackRequiresUserAction" value="no" />
     <preference name="AllowInlineMediaPlayback" value="YES" />
     <preference name="OpenAllWhitelistURLsInWebView" value="yes" />
     <preference name="ExternalHosts" value="*.youtube.com,*.ytimg.com" />
-    <preference name="DisallowOverscroll" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
     <preference name="StatusBarBackgroundColor" value="#252627" />
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="loadUrlTimeoutValue" value="70000" />
