@@ -18,13 +18,17 @@
                     ng-swipe-right="swipeRight($index)" >
                 <div class="desc" ng-bind-html="item.desc"></div>
                 <div class="pic" ng-tap="setActiveTab($index)"  
+                    ng-class="item.picBig?'over':''"
                     ng-style="{'background-image': 'url(./products/'+item.pic}">
                 </div>
                 <div class="subDesc" ng-bind-html="item.subDesc"></div>
-                <div class="content">
+                <div class="content" 
+                        ng-if="item.content.length>0" 
+                        ng-class="item.picBig?'left':''"
+                        ng-tap="setActiveTab($index)">
                     <span>CONTENT</span>
                     <ul>
-                        <li ng-repeat="it in item.content">{{it.desc}}</li>
+                        <li ng-repeat="it in item.content"  ng-bind-html="it.desc"></li>
                     </ul>
                 </div>
             </div>    

@@ -141,11 +141,13 @@ myApp.controller('productCtrl', function ($rootScope, $scope, $http, $routeParam
   $scope.itemList=[];
   $scope.activeItem=1000;
   $scope.setActiveTab=function(index){
-    $scope.activeItem=index;
+    if($scope.itemList[index].content.length>0)
+      $scope.activeItem=index;
   }
   $scope.swipeLeft = function(index) {
     console.log("swipeMe Left:::"+index);
-    $scope.activeItem=index;
+    if($scope.itemList[index].content.length>0)
+      $scope.activeItem=index;
   }
   $scope.swipeRight = function(index) {
     console.log("swipeMe right::::"+index);

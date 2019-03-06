@@ -264,12 +264,11 @@ video {
 }
 #page3 .itemList .swipeBox .content{
    position: absolute;
-   top: 50%;
-   transform: translateY(-50%);
+   top: 0px;
+   /* transform: translateY(-50%); */
    z-index: 100;
    background-color: #2e2f30;
    font-size: 18px;
-   font-weight: 400;
    line-height: 24px;
    text-align: center;
    margin: 0;
@@ -300,6 +299,10 @@ video {
    list-style: none;
    padding: 0px;
    margin-top: 15px;
+}
+#page3 .itemList .swipeBox .content.left ul{
+   text-align: left;
+   padding-left: 24px;
 }
 #page3 .itemList .swipeBox .content ul li{
    padding-left: 0px; text-indent:0px;
