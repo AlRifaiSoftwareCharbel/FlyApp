@@ -5,7 +5,7 @@
         "title": "Mix Kernels",
         "color":"#977B0E",
         "desc": "Our famous, premium kernel mix contains a carefully selected balance of nature’s finest noble nuts. Dry roasted to perfection, we have combined salted pistachios, creamy cashews, smooth hazelnuts, delicate almonds and crispy krikri coatings for irresistible snack satisfaction.",
-        "pic": "prod1.png",
+        "pic": "kernels.png",
         "subDesc":"Source of protein<br>High in mono-unsaturated fat <br>Glutamate free",
             "content": [
                 {
@@ -55,7 +55,7 @@
         "title": "Premium Fruity Mix",
         "color":"#BD2FB9",
         "desc": "The ultimate fruit and nut mix, we've brought together premium hand-picked ingredients to create a snack that bursts with flavor and nutrition. Featuring juicy raisins, sweet coconut, smooth peanuts, rich hazelnuts and more",
-        "pic": "prod1.png",
+        "pic": "premiummix.png",
         "picBig": true,
         "subDesc":"Low in salt<br>High in mono-unsaturated fat",
         "content": [
@@ -150,7 +150,7 @@
         "title": "Platinum Pistachios",
         "color":"#43685B",
         "desc": "Jumbo-sized and gently sprinkled with premium, crystalized salt, our platinum pistachios are an absolute must for fans of the shelled snack. They are hand-picked and pack a smooth, subtly sweet and salty flavor.",
-        "pic": "prod1.png",
+        "pic": "pistachio.png",
         "subDesc":"Source of protein<br>High in mono-unsaturated fat<br>Glutamate free",
         "content": []
     },
@@ -168,7 +168,7 @@
         "title": "Salted Cashews",
         "color":"#00577D",
         "desc": "Our added salts transform gourmet cashew nuts into an unforgettable taste sensation. With a delicate taste and crispy texture rounded off by deep, creamy tones, this is a heavenly treat for cashew lovers.",
-        "pic": "prod1.png",
+        "pic": "cashewsalted.png",
         "subDesc":"Source of protein<br>Source of fiber<br>High in mono-unsaturated fat",
         "content": []
     },
@@ -195,7 +195,7 @@
         "title": "Cheese Cashews",
         "color":"#007078",
         "desc": "Using own unique in-house recipe, this deliciously creamy creation combines cheese and premium, hand-picked cashew nuts, taking you on an irresistibly delicious flavor journey.",
-        "pic": "prod1.png",
+        "pic": "cashewcheese.png",
         "subDesc":"Source of protein<br>High in fiber<br>High in mono-unsaturated fat",
         "content": []
     },
@@ -204,7 +204,7 @@
         "title": "Smoked Almonds",
         "color":"#EE1D23",
         "desc": "Deceptively simple, delectable and packed with satisfying flavors, our experts have hand-selected premium almonds before gently smoking them to perfection. Ideal for sharing or enjoying on the go.",
-        "pic": "prod1.png",
+        "pic": "almondsmoked.png",
         "subDesc":"Source of protein<br>High in mono-unsaturated fat<br>Glutamate free",
         "content": []
     },
@@ -213,7 +213,7 @@
         "title": "Salted Spanish Almonds",
         "color":"#C71E66",
         "desc": "Refined, delicate and absolutely delicious, our almonds are a heavenly snack with a gourmet twist. Hand-picked with an eye for outstanding flavor and of course our signature quality.",
-        "pic": "prod1.png",
+        "pic": "almondssalted.png",
         "subDesc":"Source of protein<br>High in fiber<br>High in mono-unsaturated fat",
         "content": []
     },
@@ -222,7 +222,7 @@
         "title": "Roasted Hazelnuts",
         "color":"#92471F",
         "desc": "Our, hand-selected premium hazelnuts bring you the very best of nature’s nutrition. With a satisfying texture and sweet, full-bodied taste, they are perfect for having on the go or with breakfasts and desserts. ",
-        "pic": "prod1.png",
+        "pic": "HAZELNUT.png",
         "subDesc":"High in fiber<br>Glutamate free<br>Low salt",
         "content": []
     },
@@ -231,7 +231,7 @@
         "title": "Salted Macadamia",
         "color":"#FFB620",
         "desc": "Rich and buttery, our hand-picked macadamia nuts have been enhanced with delicately sharp tones of salt to become a gourmet taste experience that we know you’ll love. ",
-        "pic": "prod1.png",
+        "pic": "macadamiasalted.png",
         "subDesc":"High in fiber<br>High in mono-unsaturated fat",
         "content": []
     },
@@ -255,7 +255,7 @@
         "title": "Stuffed Figs & Apricots",
         "color":"#D75D14",
         "desc": "Enjoy this aromatic, artisan blend of premium ingredients, hand-picked by our experts for quality and superior taste. A perfect combination of sweet figs and apricots seamlessly blended with smooth, creamy walnuts and almonds.",
-        "pic": "prod1.png",
+        "pic": "figsapricots.png",
         "subDesc":"High in fiber<br>Very low in salt",
         "content": []
     },
@@ -264,7 +264,7 @@
         "title": "Lebanese Baklava",
         "color":"#007961",
         "desc": "Our gourmet baklava is made using an authentic in-house recipe and only the finest ingredients. Sweet, savory, delicate and utterly delicious, our take on this dessert favorite is perfect as a gift or for sharing.",
-        "pic": "prod1.png",
+        "pic": "baklava.png",
         "subDesc":"",
         "content": []
     },
@@ -291,7 +291,7 @@
         "title": "Chocolate Dates",
         "color":"#42220A",
         "desc": "Fruity, juicy dates delicately dipped in white and dark chocolate, topped with crispy flakes, this is a rich and exquisite gourmet taste experience, made with the finest handpicked ingredients.",
-        "pic": "prod1.png",
+        "pic": "ChocolateDtaes.png",
         "subDesc":"",
         "content": []
     },
@@ -300,7 +300,7 @@
         "title": "Nougat Selection",
         "color":"#C7A1CF",
         "desc": "Sweet, silky smooth and exquisite in every way, explore a delightfully fine delicacy with our premium Nougat pistachios, featuring an added layer of smooth pistachio crème for extra indulgence. ",
-        "pic": "prod1.png",
+        "pic": "nougatselection.png",
         "subDesc":"Source of fiber",
         "content": []
     },

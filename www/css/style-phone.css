@@ -37,10 +37,11 @@
       #page3 .topCat .hTitle {
          font-size: 20px;
          line-height: 53px;
+         margin-left: 5px;
       }
 
       #page3 .topCat{
-         padding-left: 25px;         
+         padding-left: 10px;         
          height: 60px;
       }
       
@@ -50,7 +51,7 @@
       #page3 .itemList {
          margin-top: 20px;
          margin-bottom: 20px;
-         margin-left: 43px;
+         margin-left: 25px;
         }
       #page3 .itemList .tit{  
          padding-left: 10px;

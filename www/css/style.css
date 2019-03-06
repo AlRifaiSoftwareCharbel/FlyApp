@@ -321,6 +321,7 @@ video {
 }
 #page3 .itemList .swipeBox .pic.over{
    left: calc(100% - 550px);
+   bottom: 60px;
 }
 
 /* Transitions */
