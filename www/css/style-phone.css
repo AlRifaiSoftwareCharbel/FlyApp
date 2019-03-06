@@ -41,10 +41,13 @@
       }
 
       #page3 .topCat{
-         padding-left: 10px;         
+         padding-left: 0px;         
          height: 60px;
       }
-      
+      #page3 .topCat .hBack {
+         padding: 13px;
+         padding-right: 12px;
+     }
       #page3 .topCat .hBack .backAR{
          height: 25px;
       }

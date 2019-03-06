@@ -58,21 +58,24 @@ myApp.run(['$rootScope', '$location', '$window', function ($rootScope, $location
      * @param  {String} pageAnimationClass A classname defining the desired page transition
      */
     $rootScope.go = function (path, pageAnimationClass) {
+      
+      if($(".page-view").hasClass("ng-animate"))
+        return;
+        
         if (typeof(pageAnimationClass) === 'undefined') { // Use a default, your choice
             $rootScope.pageAnimationClass = 'crossFade';
         }
-        
         else { // Use the specified animation
             $rootScope.pageAnimationClass = pageAnimationClass;
         }
 
-        if (path === 'back') { // Allow a 'back' keyword to go to previous page
-            $window.history.back();
-        }
+        // if (path === 'back') { // Allow a 'back' keyword to go to previous page
+        //     $window.history.back();
+        // }
         
-        else { // Go to the specified path
+        //else { // Go to the specified path
             $location.path(path);
-        }
+        //}
         $rootScope.redirectMe();
     };
     $rootScope.mainCat=[
@@ -145,17 +148,17 @@ myApp.controller('productCtrl', function ($rootScope, $scope, $http, $routeParam
       $scope.activeItem=index;
   }
   $scope.swipeLeft = function(index) {
-    console.log("swipeMe Left:::"+index);
+    //console.log("swipeMe Left:::"+index);
     if($scope.itemList[index].content.length>0)
       $scope.activeItem=index;
   }
   $scope.swipeRight = function(index) {
-    console.log("swipeMe right::::"+index);
+    //console.log("swipeMe right::::"+index);
     $scope.activeItem=1000;
   }
 
   $http.get("products.js").success(function (data) {
-    console.log(data);
+   // console.log(data);
     for(var i=0;i<data.length;i++)
     {
       if(data[i].cat == $scope.catId)

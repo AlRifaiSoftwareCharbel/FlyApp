@@ -184,7 +184,7 @@ video {
    background-color: #1D1E1F;
 }
 #page3 .topCat{
-   padding-left: 36px;
+   padding-left: 16px;
    height: 72px;
    background: #454647;
    position: absolute;
@@ -198,6 +198,7 @@ video {
 #page3 .topCat .hBack{
    display: inline-block;
    vertical-align: middle;
+       padding: 20px;
 }
 #page3 .topCat .hBack .backAR{
    height: 30px;
@@ -207,7 +208,6 @@ video {
    vertical-align: middle;
    line-height: 63px;
    font-size: 40px;
-   margin-left: 18px;
 }
 #page3 .contentCat{
    position: absolute;

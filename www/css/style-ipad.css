@@ -36,7 +36,9 @@
       font-size: 30px;
   }
 
-
+  #page3 .topCat .hBack {
+   padding-right: 12px;
+}
   #page3 .itemList {
    margin-top: 25px;
    margin-bottom: 25px;
