@@ -213,7 +213,8 @@ video {
    bottom: 0px;
    height: calc(100% - 72px);
    width: 100%;
-   overflow: scroll;
+   overflow-y: scroll;
+   -webkit-overflow-scrolling: touch;
 }
 #page3 .itemList{
    margin-left: 59px;
