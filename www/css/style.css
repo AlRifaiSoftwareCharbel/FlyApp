@@ -282,10 +282,12 @@ video {
    width: 300px;
 
    
-   animation: fadeinphoto 1s 0s infinite;
-   -moz-animation: fadeinphoto 1s 0s infinite;
--webkit-animation: fadeinphoto 1s 0s infinite;
-     -o-animation: fadeinphoto 1s 0s infinite;
+   animation: fadeinphoto 2s 0s infinite;
+   -moz-animation: fadeinphoto 2s 0s infinite;
+-webkit-animation: fadeinphoto 2s 0s infinite;
+     -o-animation: fadeinphoto 2s 0s infinite;
+
+     animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
 }
 #page3 .itemList.active .swipeBox{
@@ -304,7 +306,7 @@ video {
 
 @keyframes fadeinphoto {
    0% { left: 100%; }
-   50% { left: calc(100% - 10px); }
+   50% { left: calc(100% - 12px); }
    100% { left: 100%; }
 }
 #page3 .itemList .swipeBox .content .arrow{
