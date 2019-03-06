@@ -73,7 +73,7 @@ myApp.run(['$rootScope', '$location', '$window', function ($rootScope, $location
         else { // Go to the specified path
             $location.path(path);
         }
-        //$rootScope.redirectMe();
+        $rootScope.redirectMe();
     };
     $rootScope.mainCat=[
       {
@@ -100,7 +100,7 @@ myApp.run(['$rootScope', '$location', '$window', function ($rootScope, $location
             //$rootScope.redirectMe();
 
             //redirect me
-           // window.location = "#/0";
+            window.location = "#/0";
 
         }, $rootScope.timeOutMe);
     //end 

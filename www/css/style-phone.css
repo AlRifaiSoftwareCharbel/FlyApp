@@ -61,13 +61,13 @@
       #page3 .itemList .swipeBox .desc {
          margin-bottom: 10px;
          font-size: 14px;
-         padding-left: 15px;
+         padding-left: 10px;
          width: 100%;  
       }
       #page3 .itemList .swipeBox .subDesc{
          font-size: 15px;
          padding-bottom: 20px;
-         padding-left: 15px;
+         padding-left: 10px;
          width: 100%;
       }
       #page3 .itemList .swipeBox .content {
