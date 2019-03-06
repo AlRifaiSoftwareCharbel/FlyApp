@@ -31,7 +31,7 @@
     <preference name="detect-data-types" value="true" />
     <!-- <preference name="orientation" value="portrait" /> -->
     <preference name="Fullscreen" value="true" />
-    <preference name="webviewbounce" value="false" />
+    <preference name="webviewbounce" value="true" />
     <preference name="MediaPlaybackRequiresUserAction" value="no" />
     <preference name="AllowInlineMediaPlayback" value="YES" />
     <preference name="OpenAllWhitelistURLsInWebView" value="yes" />
