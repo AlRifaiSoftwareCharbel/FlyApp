@@ -18,13 +18,16 @@
                     "desc": "Pistachio"
                 },
                 {
-                    "desc": "Almond Half Salted"
-                },
-                {
                     "desc": "Cashew Salted"
                 },
                 {
                     "desc": "Cashew Krikri"
+                },
+                {
+                    "desc": "Almond Krikri"
+                },
+                {
+                    "desc": "Almond Smoked"
                 },
                 {
                     "desc": "Almond Salted"
@@ -50,6 +53,9 @@
             },
             {
                 "desc": "Coated Peanut"
+            },
+            {
+                "desc": "Peanut Krikri"
             }
         ]
     },
@@ -75,7 +81,10 @@
                     "desc": "Golden Raisins&nbsp;&nbsp;&nbsp;Gojiberry"
                 },
                 {
-                    "desc": "Raw Hazelnut"
+                    "desc": "Raw Cashew&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Raw Hazelnut"
+                },
+                {
+                    "desc": "Raw Peanut Peeled"
                 }
             ]
     },
