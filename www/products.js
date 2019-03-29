@@ -78,13 +78,10 @@
                     "desc": "Raw Walnut&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Raw Almond"
                 },
                 {
-                    "desc": "Golden Raisins&nbsp;&nbsp;&nbsp;Gojiberry"
+                    "desc": "Golden Raisins&nbsp;&nbsp;Gojiberry"
                 },
                 {
-                    "desc": "Raw Cashew&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Raw Hazelnut"
-                },
-                {
-                    "desc": "Raw Peanut Peeled"
+                    "desc": "Raw Peanut&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Raw Cashew Peeled"
                 }
             ]
     },
